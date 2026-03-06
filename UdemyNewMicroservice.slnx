@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/services/" />
+  <Folder Name="/src/services/catalog/">
+    <Project Path="UdemyNewMicroservice.Catalog.API/UdemyNewMicroservice.Catalog.API.csproj" />
+  </Folder>
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
+</Solution>
