@@ -4,6 +4,10 @@
   <Folder Name="/src/services/catalog/">
     <Project Path="UdemyNewMicroservice.Catalog.API/UdemyNewMicroservice.Catalog.API.csproj" />
   </Folder>
+  <Folder Name="/tests/">
+    <File Path="UdemyNewMicroservice.Catalog.API/UdemyNewMicroservice.Catalog.API.http" />
+    <Project Path="UdemyNewMicroservice.Catalog.API.Tests/UdemyNewMicroservice.Catalog.API.Tests.csproj" />
+  </Folder>
   <Project Path="docker-compose.dcproj">
     <Build />
   </Project>

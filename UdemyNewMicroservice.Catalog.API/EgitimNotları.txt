@@ -1,0 +1,42 @@
+﻿Docker Compose Komutları
+
+docker ps -a
+# Çalışan ve durmuş tüm container'ları listeler.
+# Eski mongo.db.catalog.container ve mongo.db.catalog.ui var mı görürsün.
+
+docker rm -f mongo.db.catalog.container mongo.db.catalog.ui
+# İsim çakışmasına neden olan eski container'ları zorla siler.
+# "already in use" hatasını temizler.
+
+docker compose down --remove-orphans
+# Compose'a ait ağları ve sahipsiz kalan container'ları kapatır/temizler.
+# Önceki başarısız denemelerden kalan artıklar silinir.
+
+docker compose config
+# Docker'ın compose dosyasını nasıl okuduğunu gösterir.
+# Burada image isimleri, environment ve port mapping doğru mu kontrol edersin.
+# Hâlâ mongo:10.0-rc veya alphine yazıyorsa yanlış dosya kullanılıyordur.
+
+docker compose pull
+# Compose içindeki image'ları registry'den indirir.
+# Tag hatası varsa burada net görünür.
+
+docker compose up -d
+# Servisleri arka planda ayağa kaldırır.
+# Mongo ve mongo-express düzgün başladıysa container'lar running olur.
+
+docker compose ps
+# Compose servislerinin son durumunu gösterir.
+# Up, Exit, Restarting gibi durumları buradan görürsün.
+
+docker compose logs mongo.db.catalog
+# Mongo container loglarını gösterir.
+# Authentication, port bind veya startup hatalarını buradan okursun.
+
+docker compose logs mongo.db.catalog.ui
+# Mongo Express loglarını gösterir.
+# Connection string, auth veya UI açılış hatalarını buradan görürsün.
+
+docker compose down -v --remove-orphans
+# En son çare olarak her şeyi ve volume'leri siler.
+# Mongo verisini de sıfırlar. Temiz başlangıç içindir.
