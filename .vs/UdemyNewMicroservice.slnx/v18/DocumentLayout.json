@@ -7,20 +7,12 @@
       "RelativeMoniker": "D:0:0:{A1AD7CEF-EE7E-5251-F848-3B3FDF159885}|UdemyNewMicroservice.Catalog.API\\UdemyNewMicroservice.Catalog.API.csproj|solutionrelative:udemynewmicroservice.catalog.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1AD7CEF-EE7E-5251-F848-3B3FDF159885}|UdemyNewMicroservice.Catalog.API\\UdemyNewMicroservice.Catalog.API.csproj|c:\\users\\eren.ilgun\\desktop\\eren \u0130lg\u00FCn\\projects\\udemynewmicroservice\\udemynewmicroservice.catalog.api\\options\\optionext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AD7CEF-EE7E-5251-F848-3B3FDF159885}|UdemyNewMicroservice.Catalog.API\\UdemyNewMicroservice.Catalog.API.csproj|solutionrelative:udemynewmicroservice.catalog.api\\options\\optionext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1AD7CEF-EE7E-5251-F848-3B3FDF159885}|UdemyNewMicroservice.Catalog.API\\UdemyNewMicroservice.Catalog.API.csproj|c:\\users\\eren.ilgun\\desktop\\eren \u0130lg\u00FCn\\projects\\udemynewmicroservice\\udemynewmicroservice.catalog.api\\features\\categories\\create\\createcategorycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1AD7CEF-EE7E-5251-F848-3B3FDF159885}|UdemyNewMicroservice.Catalog.API\\UdemyNewMicroservice.Catalog.API.csproj|solutionrelative:udemynewmicroservice.catalog.api\\features\\categories\\create\\createcategorycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1AD7CEF-EE7E-5251-F848-3B3FDF159885}|UdemyNewMicroservice.Catalog.API\\UdemyNewMicroservice.Catalog.API.csproj|c:\\users\\eren.ilgun\\desktop\\eren \u0130lg\u00FCn\\projects\\udemynewmicroservice\\udemynewmicroservice.catalog.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A1AD7CEF-EE7E-5251-F848-3B3FDF159885}|UdemyNewMicroservice.Catalog.API\\UdemyNewMicroservice.Catalog.API.csproj|solutionrelative:udemynewmicroservice.catalog.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AD7CEF-EE7E-5251-F848-3B3FDF159885}|UdemyNewMicroservice.Catalog.API\\UdemyNewMicroservice.Catalog.API.csproj|c:\\users\\eren.ilgun\\desktop\\eren \u0130lg\u00FCn\\projects\\udemynewmicroservice\\udemynewmicroservice.catalog.api\\egitimbakilacak.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A1AD7CEF-EE7E-5251-F848-3B3FDF159885}|UdemyNewMicroservice.Catalog.API\\UdemyNewMicroservice.Catalog.API.csproj|solutionrelative:udemynewmicroservice.catalog.api\\egitimbakilacak.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|c:\\users\\eren.ilgun\\desktop\\eren \u0130lg\u00FCn\\projects\\udemynewmicroservice\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
-      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+      "AbsoluteMoniker": "D:0:0:{A1AD7CEF-EE7E-5251-F848-3B3FDF159885}|UdemyNewMicroservice.Catalog.API\\UdemyNewMicroservice.Catalog.API.csproj|c:\\users\\eren.ilgun\\desktop\\eren \u0130lg\u00FCn\\projects\\udemynewmicroservice\\udemynewmicroservice.catalog.api\\notes.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A1AD7CEF-EE7E-5251-F848-3B3FDF159885}|UdemyNewMicroservice.Catalog.API\\UdemyNewMicroservice.Catalog.API.csproj|solutionrelative:udemynewmicroservice.catalog.api\\notes.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,72 +22,20 @@
       "DocumentGroups": [
         {
           "DockedHeight": 237,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EgitimBakilacak.txt",
-              "DocumentMoniker": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\UdemyNewMicroservice.Catalog.API\\EgitimBakilacak.txt",
-              "RelativeDocumentMoniker": "UdemyNewMicroservice.Catalog.API\\EgitimBakilacak.txt",
-              "ToolTip": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\UdemyNewMicroservice.Catalog.API\\EgitimBakilacak.txt",
-              "RelativeToolTip": "UdemyNewMicroservice.Catalog.API\\EgitimBakilacak.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-03-19T09:07:20.145Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OptionExt.cs",
-              "DocumentMoniker": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\UdemyNewMicroservice.Catalog.API\\Options\\OptionExt.cs",
-              "RelativeDocumentMoniker": "UdemyNewMicroservice.Catalog.API\\Options\\OptionExt.cs",
-              "ToolTip": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\UdemyNewMicroservice.Catalog.API\\Options\\OptionExt.cs",
-              "RelativeToolTip": "UdemyNewMicroservice.Catalog.API\\Options\\OptionExt.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T09:48:03.51Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\UdemyNewMicroservice.Catalog.API\\Program.cs",
-              "RelativeDocumentMoniker": "UdemyNewMicroservice.Catalog.API\\Program.cs",
-              "ToolTip": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\UdemyNewMicroservice.Catalog.API\\Program.cs",
-              "RelativeToolTip": "UdemyNewMicroservice.Catalog.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T09:47:33.088Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "docker-compose.yml",
-              "DocumentMoniker": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\docker-compose.yml",
-              "RelativeDocumentMoniker": "docker-compose.yml",
-              "ToolTip": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\docker-compose.yml",
-              "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-03-19T09:43:09.626Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\UdemyNewMicroservice.Catalog.API\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "UdemyNewMicroservice.Catalog.API\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\UdemyNewMicroservice.Catalog.API\\appsettings.Development.json",
-              "RelativeToolTip": "UdemyNewMicroservice.Catalog.API\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-19T09:38:59.621Z",
+              "Title": "Notes.txt",
+              "DocumentMoniker": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\UdemyNewMicroservice.Catalog.API\\Notes.txt",
+              "RelativeDocumentMoniker": "UdemyNewMicroservice.Catalog.API\\Notes.txt",
+              "ToolTip": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\UdemyNewMicroservice.Catalog.API\\Notes.txt",
+              "RelativeToolTip": "UdemyNewMicroservice.Catalog.API\\Notes.txt",
+              "ViewState": "AgIAABABAAAAAAAAAAAAAC0BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-04-27T10:49:22.646Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -132,15 +72,41 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\UdemyNewMicroservice.Catalog.API\\Program.cs",
+              "RelativeDocumentMoniker": "UdemyNewMicroservice.Catalog.API\\Program.cs",
+              "ToolTip": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\UdemyNewMicroservice.Catalog.API\\Program.cs",
+              "RelativeToolTip": "UdemyNewMicroservice.Catalog.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T13:00:31.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateCategoryCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\UdemyNewMicroservice.Catalog.API\\Features\\Categories\\Create\\CreateCategoryCommandHandler.cs",
+              "RelativeDocumentMoniker": "UdemyNewMicroservice.Catalog.API\\Features\\Categories\\Create\\CreateCategoryCommandHandler.cs",
+              "ToolTip": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\UdemyNewMicroservice.Catalog.API\\Features\\Categories\\Create\\CreateCategoryCommandHandler.cs",
+              "RelativeToolTip": "UdemyNewMicroservice.Catalog.API\\Features\\Categories\\Create\\CreateCategoryCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T12:59:56.145Z",
+              "EditorCaption": ""
             }
           ]
         },

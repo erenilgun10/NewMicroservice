@@ -4,6 +4,9 @@
   <Folder Name="/src/services/catalog/">
     <Project Path="UdemyNewMicroservice.Catalog.API/UdemyNewMicroservice.Catalog.API.csproj" />
   </Folder>
+  <Folder Name="/src/shared/">
+    <Project Path="../UdemyNewMicroservice.Shared/UdemyNewMicroservice.Shared.csproj" Id="1143aeaa-5d03-4683-8799-26c2949a4866" />
+  </Folder>
   <Folder Name="/tests/">
     <File Path="UdemyNewMicroservice.Catalog.API/UdemyNewMicroservice.Catalog.API.http" />
     <Project Path="UdemyNewMicroservice.Catalog.API.Tests/UdemyNewMicroservice.Catalog.API.Tests.csproj" />

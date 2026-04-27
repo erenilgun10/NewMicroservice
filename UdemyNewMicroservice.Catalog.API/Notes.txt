@@ -1,0 +1,357 @@
+﻿MONGODB + EF CORE ÇALIŞMA NOTLARI
+
+1. SNOWFLAKE ALGORITHM
+
+    1.1. Snowflake ID algoritmasını araştır.
+    1.2. Timestamp + worker id + sequence mantığını öğren.
+    1.3. Dağıtık sistemlerde unique ID üretimini incele.
+    1.4. Aynı anda çok fazla kayıt oluştuğunda ID çakışması nasıl engelleniyor bak.
+    1.5. Saat geri sarılması durumunda nasıl önlem alınıyor araştır.
+    1.6. MongoDB ObjectId ile Snowflake ID farklarını karşılaştır.
+    1.7. MongoDB’de _id alanı için ObjectId mi Snowflake ID mi kullanılacağına karar ver.
+    1.8. .NET tarafında Snowflake ID generator nasıl yazılır veya hazır paket var mı araştır.
+    1.9. WorkerId / MachineId değerlerinin çoklu instance ortamında nasıl yönetileceğini incele.
+    1.10. Snowflake ID’nin long, string veya custom id olarak entity içinde nasıl tutulacağını belirle.
+
+
+2. EF CORE OWNED TYPES
+
+    2.1. EF Core Owned Types konusunu araştır.
+    2.2. Owned Type ile Value Object mantığını karşılaştır.
+    2.3. OwnsOne kullanımını incele.
+    2.4. OwnsMany kullanımını incele.
+    2.5. [Owned] attribute kullanımına bak.
+    2.6. Owned Type’ın kendi başına DbSet olarak kullanılıp kullanılmadığını öğren.
+    2.7. Owned Type’ın ana entity’ye bağımlı yaşama mantığını öğren.
+    2.8. MongoDB tarafında Owned Type’ın embedded document karşılığına bak.
+    2.9. Address, Money, AuditInfo, FullName, GeoLocation gibi alanları Owned Type adayı olarak değerlendir.
+    2.10. MongoDB EF Core Provider’ın Owned Types desteğini kontrol et.
+    2.11. Owned Type içinde nested object kullanılabiliyor mu incele.
+    2.12. Owned Type alanlarına index verilebiliyor mu kontrol et.
+    2.13. Owned Type mapping işlemini OnModelCreating içinde nasıl yapacağını not al.
+
+
+3. MONGODB .NET PAKETLERİ
+
+    3.1. MongoDB.Driver paketini incele.
+    3.2. MongoDB.Bson paketini incele.
+    3.3. MongoDB.Bson.Serialization.Attributes kullanımını incele.
+    3.4. MongoDB.EntityFrameworkCore paketini incele.
+    3.5. MongoDB.Driver ile doğrudan MongoDB işlemleri nasıl yapılır öğren.
+    3.6. MongoDB.EntityFrameworkCore ile EF Core üzerinden MongoDB nasıl yönetilir öğren.
+    3.7. MongoDB.Driver ve MongoDB.EntityFrameworkCore paketlerinin birlikte kullanılıp kullanılamayacağını incele.
+    3.8. Hangi senaryoda Driver, hangi senaryoda EF Core Provider kullanılacağını belirle.
+
+
+4. MONGODB DRIVER KULLANIMI
+
+    4.1. IMongoClient kullanımını öğren.
+    4.2. IMongoDatabase kullanımını öğren.
+    4.3. IMongoCollection<T> kullanımını öğren.
+    4.4. MongoClient nesnesinin nasıl oluşturulduğunu incele.
+    4.5. MongoClient’ın singleton olarak kullanılıp kullanılmaması gerektiğine bak.
+    4.6. Collection üzerinden InsertOne / InsertMany işlemlerini öğren.
+    4.7. Collection üzerinden Find işlemlerini öğren.
+    4.8. Collection üzerinden ReplaceOne / UpdateOne / UpdateMany işlemlerini öğren.
+    4.9. Collection üzerinden DeleteOne / DeleteMany işlemlerini öğren.
+    4.10. FilterDefinition kullanımını incele.
+    4.11. Builders<T>.Filter kullanımını incele.
+    4.12. Builders<T>.Update kullanımını incele.
+    4.13. Builders<T>.IndexKeys kullanımını incele.
+    4.14. Aggregation pipeline kullanımını incele.
+    4.15. Bulk write işlemlerini incele.
+    4.16. Transaction desteğini incele.
+    4.17. MongoDB Driver ile index oluşturmayı öğren.
+
+
+5. MONGODB BSON VE ATTRIBUTE KULLANIMI
+
+    5.1. ObjectId kullanımını incele.
+    5.2. BsonDocument kullanımını incele.
+    5.3. [BsonId] attribute kullanımını öğren.
+    5.4. [BsonElement] attribute kullanımını öğren.
+    5.5. [BsonIgnore] attribute kullanımını öğren.
+    5.6. [BsonRepresentation] attribute kullanımını öğren.
+    5.7. Entity property isimleri ile MongoDB field isimlerini eşleştirmeyi öğren.
+    5.8. ObjectId’nin string olarak tutulduğu senaryoları incele.
+    5.9. BSON attribute’ları ile Fluent API mapping kullanımını karşılaştır.
+    5.10. EF Core Provider kullanırken BSON attribute kullanımı sorun çıkarıyor mu kontrol et.
+
+
+6. MONGODB ENTITYFRAMEWORKCORE KULLANIMI
+
+    6.1. MongoDB.EntityFrameworkCore dokümanlarını oku.
+    6.2. MongoDB ile EF Core entegrasyonunun nasıl yapıldığını incele.
+    6.3. DbContext sınıfı ile MongoDB bağlantısı nasıl kurulur öğren.
+    6.4. DbSet<T> ile MongoDB collection mapping işlemini incele.
+    6.5. UseMongoDB metodunun kullanımını öğren.
+    6.6. ToCollection metodunun kullanımını öğren.
+    6.7. OnModelCreating içinde MongoDB mapping işlemlerini incele.
+    6.8. LINQ sorgularının MongoDB’ye nasıl çevrildiğini kontrol et.
+    6.9. Change tracking desteğini incele.
+    6.10. SaveChanges / SaveChangesAsync kullanımını test et.
+    6.11. Insert / update / delete işlemlerini EF Core Provider ile dene.
+    6.12. MongoDB EF Core Provider limitlerini çıkar.
+    6.13. Provider’ın hangi EF Core özelliklerini desteklemediğini not al.
+    6.14. Migration desteğini kontrol et.
+    6.15. Include / navigation property desteğini kontrol et.
+    6.16. Projection desteğini kontrol et.
+    6.17. Transaction desteğini kontrol et.
+    6.18. Owned Type desteğini test et.
+
+
+7. OPTIONS PATTERN İLE MONGODB AYARLARI
+
+    7.1. .NET Core Options Pattern konusunu incele.
+    7.2. MongoOption sınıfı oluştur.
+    7.3. MongoOption içine ConnectionString alanı ekle.
+    7.4. MongoOption içine DatabaseName alanı ekle.
+    7.5. appsettings.json içine MongoDB ayarlarını ekle.
+    7.6. MongoDB bağlantı dizesini appsettings.json üzerinden oku.
+    7.7. Database adını appsettings.json üzerinden oku.
+    7.8. services.Configure<MongoOption>() ile configuration bind işlemini yap.
+    7.9. IOptions<MongoOption> kullanımını incele.
+    7.10. MongoOption değerini singleton olarak DI’a ekleme şeklini incele.
+    7.11. Aşağıdaki yapıyı projede uygulanabilir hâle getir:
+          services.AddSingleton<MongoOption>(sp =>
+              sp.GetRequiredService<IOptions<MongoOption>>().Value);
+    7.12. Development / Production ortamlarında farklı connection string kullanımını incele.
+    7.13. Connection string bilgisinin secret olarak nasıl saklanacağını araştır.
+
+
+8. DEPENDENCY INJECTION YAPISI
+
+    8.1. IMongoClient DI kaydını oluştur.
+    8.2. MongoOption üzerinden ConnectionString değerini al.
+    8.3. MongoClient nesnesini singleton olarak register et.
+    8.4. Aşağıdaki yapıyı projeye uygun hâle getir:
+          services.AddSingleton<IMongoClient>(sp =>
+              new MongoClient(sp.GetRequiredService<MongoOption>().ConnectionString));
+    8.5. IMongoDatabase DI’a eklenmeli mi kontrol et.
+    8.6. IMongoCollection<T> doğrudan DI’a eklenmeli mi kontrol et.
+    8.7. Repository katmanında IMongoClient mı IMongoDatabase mi kullanılacak karar ver.
+    8.8. EF Core Provider kullanılacaksa DbContext DI kaydını oluştur.
+    8.9. Driver ve EF Core Provider birlikte kullanılacaksa DI yapısını buna göre düzenle.
+
+
+9. DBCONTEXT YAPISI
+
+    9.1. AppDbContext sınıfı oluştur.
+    9.2. DbContextOptions<AppDbContext> constructor ekle.
+    9.3. DbSet<T> property’lerini ekle.
+    9.4. OnModelCreating metodunu override et.
+    9.5. Entity - collection mapping işlemini ToCollection ile yap.
+    9.6. Owned Type mapping işlemini OnModelCreating içine ekle.
+    9.7. Index mapping işlemlerini OnModelCreating içine ekle.
+    9.8. MongoDB bağlantısını UseMongoDB ile yapılandır.
+    9.9. DbContext lifetime ayarını kontrol et.
+    9.10. SaveChangesAsync ile CRUD testleri yap.
+
+
+10. ENTITY / DOCUMENT MODELLEME
+
+    10.1. MongoDB’nin NoSQL document yapısını dikkate al.
+    10.2. Relational database mantığıyla gereksiz ilişki kurmaktan kaçın.
+    10.3. Sık birlikte okunan verileri aynı document içinde tutmayı değerlendir.
+    10.4. Çok büyüyebilecek array/list alanlarını document içine gömerken dikkat et.
+    10.5. Entity tasarımını read pattern’e göre yap.
+    10.6. Embedded document kullanılacak alanları belirle.
+    10.7. Ayrı collection olacak entity’leri belirle.
+    10.8. Value Object olacak yapıları belirle.
+    10.9. Aggregate root mantığını MongoDB document modeliyle uyumlu tasarla.
+    10.10. Id alanı için ObjectId / Snowflake / Guid / string seçeneklerini değerlendir.
+    10.11. CreatedAt / UpdatedAt gibi audit alanlarını standartlaştır.
+    10.12. Soft delete kullanılacaksa IsDeleted / DeletedAt alanlarını belirle.
+    10.13. TenantId kullanılacaksa tüm entity modeline ekle.
+
+
+11. INDEX VE PERFORMANS
+
+    11.1. Sık sorgulanan alanları belirle.
+    11.2. Email, Username, TenantId, Status, CreatedAt gibi alanları index adayı olarak değerlendir.
+    11.3. Unique index gereken alanları belirle.
+    11.4. Compound index gereken sorguları belirle.
+    11.5. MongoDB EF Core Provider ile HasIndex kullanımını incele.
+    11.6. MongoDB Driver ile index oluşturmayı öğren.
+    11.7. TTL index ihtiyacı var mı kontrol et.
+    11.8. Text index ihtiyacı var mı kontrol et.
+    11.9. Nested field index ihtiyacı var mı kontrol et.
+    11.10. Gereksiz index kullanımından kaçın.
+    11.11. Indexlerin write performansına etkisini incele.
+    11.12. Query pattern belirlenmeden index ekleme.
+
+
+12. QUERY / SORGU OPTİMİZASYONU
+
+    12.1. EF Core Provider ile LINQ sorgularını test et.
+    12.2. MongoDB Driver ile LINQ sorgularını test et.
+    12.3. Nested property üzerinde filtreleme yapmayı dene.
+    12.4. Owned Type alanları üzerinde filtreleme yapmayı dene.
+    12.5. Pagination yapısını kur.
+    12.6. Sorting yapısını kur.
+    12.7. Projection kullanımını test et.
+    12.8. Büyük veri setlerinde sorgu performansını incele.
+    12.9. Explain plan kullanımını araştır.
+    12.10. Slow query analizini öğren.
+    12.11. Aggregation gereken sorguları belirle.
+    12.12. EF Core Provider yetersiz kalırsa MongoDB.Driver kullanımına geç.
+
+
+13. REPLICATION
+
+    13.1. MongoDB replica set mantığını araştır.
+    13.2. Primary / secondary node yapısını öğren.
+    13.3. Failover mekanizmasını incele.
+    13.4. Read preference kullanımını öğren.
+    13.5. Write concern kullanımını öğren.
+    13.6. Production ortamında replica set gereksinimini değerlendir.
+    13.7. Connection string içinde replica set ayarlarını incele.
+
+
+14. BACKUP
+
+    14.1. MongoDB backup stratejilerini araştır.
+    14.2. mongodump kullanımını öğren.
+    14.3. mongorestore kullanımını öğren.
+    14.4. Atlas backup özelliklerini incele.
+    14.5. Point-in-time restore desteğini araştır.
+    14.6. Backup sıklığını belirle.
+    14.7. Backup dosyalarının nerede saklanacağını belirle.
+    14.8. Restore test senaryosu hazırla.
+
+
+15. MONITORING
+
+    15.1. MongoDB monitoring araçlarını incele.
+    15.2. MongoDB Atlas monitoring özelliklerini incele.
+    15.3. Connection pool takibini öğren.
+    15.4. Slow query log analizini öğren.
+    15.5. Index usage analizini öğren.
+    15.6. CPU / memory / disk kullanım metriklerini takip et.
+    15.7. Alert mekanizması kurulacak mı değerlendir.
+    15.8. Production ortamı için monitoring stratejisi belirle.
+
+
+16. GÜVENLİK
+
+    16.1. Connection string bilgisini doğrudan kod içine yazma.
+    16.2. Kullanıcı adı / şifre bilgisini appsettings dışında secret olarak saklamayı araştır.
+    16.3. MongoDB kullanıcı yetkilerini minimum privilege mantığıyla ver.
+    16.4. Production ortamında TLS/SSL kullanımını kontrol et.
+    16.5. IP whitelist / network access ayarlarını incele.
+    16.6. Database user rollerini belirle.
+    16.7. Loglarda connection string bilgisinin görünmediğinden emin ol.
+
+
+17. HİBRİT KULLANIM PLANI
+
+    17.1. Basit CRUD işlemleri için MongoDB.EntityFrameworkCore kullanımını değerlendir.
+    17.2. Gelişmiş MongoDB işlemleri için MongoDB.Driver kullanımını değerlendir.
+    17.3. Aggregation gereken yerlerde MongoDB.Driver kullan.
+    17.4. Bulk operation gereken yerlerde MongoDB.Driver kullan.
+    17.5. Özel index yönetimi gereken yerlerde MongoDB.Driver kullan.
+    17.6. Standart repository CRUD işlemlerinde DbContext kullan.
+    17.7. EF Core Provider limitlerini aşan senaryoları listele.
+    17.8. Projede tek yöntem mi hibrit yöntem mi kullanılacağına karar ver.
+
+
+18. PROJEYE EKLENECEK DOSYA / KLASÖR YAPISI
+
+    18.1. Infrastructure/Persistence klasörü oluştur.
+    18.2. Infrastructure/Persistence/AppDbContext.cs dosyası oluştur.
+    18.3. Infrastructure/Persistence/MongoOption.cs dosyası oluştur.
+    18.4. Infrastructure/Persistence/MongoDbRegistration.cs dosyası oluştur.
+    18.5. Domain/Entities klasörü oluştur.
+    18.6. Domain/ValueObjects klasörü oluştur.
+    18.7. Repository kullanılacaksa Application/Interfaces altına interface ekle.
+    18.8. Repository implementasyonlarını Infrastructure altında tut.
+    18.9. MongoDB registration işlemlerini extension method olarak yaz.
+
+
+19. UYGULAMA SIRASI
+
+    19.1. MongoDB EF Core dokümanlarını oku.
+    19.2. MongoDB.Driver temel kullanımını oku.
+    19.3. EF Core Owned Types dokümanını oku.
+    19.4. Snowflake ID algoritmasını araştır.
+    19.5. MongoOption sınıfını oluştur.
+    19.6. appsettings.json içine MongoDB ayarlarını ekle.
+    19.7. Options Pattern ile MongoOption bind et.
+    19.8. IMongoClient singleton DI kaydını ekle.
+    19.9. AppDbContext oluştur.
+    19.10. UseMongoDB ile DbContext bağlantısını kur.
+    19.11. Entity sınıflarını oluştur.
+    19.12. Owned Type sınıflarını oluştur.
+    19.13. ToCollection mappinglerini ekle.
+    19.14. OwnsOne / OwnsMany mappinglerini ekle.
+    19.15. Index mappinglerini ekle.
+    19.16. Insert testi yap.
+    19.17. Update testi yap.
+    19.18. Delete testi yap.
+    19.19. Find testi yap.
+    19.20. Pagination testi yap.
+    19.21. Owned Type sorgulama testi yap.
+    19.22. Nested document sorgulama testi yap.
+    19.23. Index kullanımını test et.
+    19.24. EF Core Provider limitlerine takılan noktaları listele.
+    19.25. Gerekirse MongoDB.Driver ile hibrit yapı kur.
+
+    /*DEVAM*/
+
+    20 -- builder.Services.AddSingleton<IMongoClient, MongoClient>(sp =>
+{
+    var options = sp.GetRequiredService<MongoOption>();
+    return new MongoClient(options.ConnectionString);
+});
+
+20.1 Bunlar gibi microsoft pattern’lerinin araştırılması bu tarz patternlerin listesinin çıkarılması ve projeye uygun olanların uygulanması da önemli bir adım olacaktır.
+20.2 REFİT KÜTÜPHANESİ nedir detaylarına bak. ApiException, HttpClientFactory, Polly gibi kavramlarla ilişkisi nedir araştır. Projede REST API çağrıları varsa Refit ile nasıl entegre edileceğini incele.
+20.3 Polly kütüphanesini araştır. Retry, Circuit Breaker, Timeout gibi politikaların nasıl uygulanacağını ve Refit ile entegrasyonunu incele.
+20.4 -> Virtual ve New keyword’lerinin kullanım farklarını araştır. Özellikle testlerde mocklama yaparken hangi durumlarda virtual, hangi durumlarda new keyword’ünün kullanılması gerektiğini öğren.
+-> Polimorphism konusu da burada devreye girebilir. Base class ve derived class yapılarında method overriding ve hiding konularını araştırarak virtual ve new keyword’lerinin hangi durumlarda kullanılması gerektiğini öğren.
+
+21.1 MEDİATR kütüphanesini araştır. CQRS pattern’ı ile ilişkisi nedir, nasıl kullanılır incele. Projede command ve query işlemleri için MediatR kullanımı uygun olabilir mi değerlendirme yap.
+21.2 CQRS pattern’ını araştır. Command ve Query işlemlerinin ayrılması ne gibi avantajlar sağlar, nasıl uygulanır incele. Projede karmaşık iş kuralları veya yüksek performans gereksinimi varsa CQRS kullanımı uygun olabilir mi değerlendirme yap.
+21.3 Domain Events kavramını araştır. DDD (Domain-Driven Design) ile ilişkisi nedir, nasıl uygulanır incele.
+21.4 Capling pattern’ını araştır. Özellikle distributed transaction yönetimi için kullanılan Capling pattern’ının ne olduğunu, nasıl çalıştığını ve projede kullanılıp kullanılamayacağını incele. 
+-> Controller ile bussiness arasındaki capling pattern’ını araştırarak controller’da sadece API endpoint tanımlanıp iş kurallarının service katmanında nasıl yönetileceğini öğren.
+21.5 Immutable object kavramını araştır. Immutable object’ların avantajları nelerdir, nasıl oluşturulur incele. Projede immutable object kullanımı uygun olabilir mi değerlendirme yap.
+21.6 RouteGroupBuilder nedir ? 
+
+
+
+
+
+XX. KONTROL LİSTESİ
+
+    [ ] Snowflake algorithm araştırıldı.
+    [ ] ObjectId vs Snowflake karşılaştırıldı.
+    [ ] EF Core Owned Types incelendi.
+    [ ] MongoDB.Driver incelendi.
+    [ ] MongoDB.Bson incelendi.
+    [ ] MongoDB.Bson.Serialization.Attributes incelendi.
+    [ ] MongoDB.EntityFrameworkCore incelendi.
+    [ ] MongoOption sınıfı oluşturuldu.
+    [ ] appsettings.json MongoDB ayarları eklendi.
+    [ ] Options Pattern yapılandırıldı.
+    [ ] IMongoClient singleton olarak eklendi.
+    [ ] AppDbContext oluşturuldu.
+    [ ] UseMongoDB yapılandırıldı.
+    [ ] DbSet property’leri eklendi.
+    [ ] ToCollection mappingleri eklendi.
+    [ ] Owned Type mappingleri eklendi.
+    [ ] Entity modelleri document yapısına göre düzenlendi.
+    [ ] Embedded document alanları belirlendi.
+    [ ] Ayrı collection olacak entity’ler belirlendi.
+    [ ] Indexlenecek alanlar belirlendi.
+    [ ] Unique index alanları belirlendi.
+    [ ] CRUD testleri yapıldı.
+    [ ] Pagination test edildi.
+    [ ] Projection test edildi.
+    [ ] Nested field sorguları test edildi.
+    [ ] Provider limitleri çıkarıldı.
+    [ ] MongoDB.Driver gereken senaryolar belirlendi.
+    [ ] Replication konusu incelendi.
+    [ ] Backup stratejisi belirlendi.
+    [ ] Monitoring stratejisi belirlendi.
+    [ ] Security ayarları kontrol edildi.
