@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A1AD7CEF-EE7E-5251-F848-3B3FDF159885}|UdemyNewMicroservice.Catalog.API\\UdemyNewMicroservice.Catalog.API.csproj|c:\\users\\eren.ilgun\\desktop\\eren \u0130lg\u00FCn\\projects\\udemynewmicroservice\\udemynewmicroservice.catalog.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AD7CEF-EE7E-5251-F848-3B3FDF159885}|UdemyNewMicroservice.Catalog.API\\UdemyNewMicroservice.Catalog.API.csproj|solutionrelative:udemynewmicroservice.catalog.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AD7CEF-EE7E-5251-F848-3B3FDF159885}|UdemyNewMicroservice.Catalog.API\\UdemyNewMicroservice.Catalog.API.csproj|c:\\users\\eren.ilgun\\desktop\\eren \u0130lg\u00FCn\\projects\\udemynewmicroservice\\udemynewmicroservice.catalog.api\\features\\categories\\create\\createcategorycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AD7CEF-EE7E-5251-F848-3B3FDF159885}|UdemyNewMicroservice.Catalog.API\\UdemyNewMicroservice.Catalog.API.csproj|solutionrelative:udemynewmicroservice.catalog.api\\features\\categories\\create\\createcategorycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AD7CEF-EE7E-5251-F848-3B3FDF159885}|UdemyNewMicroservice.Catalog.API\\UdemyNewMicroservice.Catalog.API.csproj|c:\\users\\eren.ilgun\\desktop\\eren \u0130lg\u00FCn\\projects\\udemynewmicroservice\\udemynewmicroservice.catalog.api\\notes.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A1AD7CEF-EE7E-5251-F848-3B3FDF159885}|UdemyNewMicroservice.Catalog.API\\UdemyNewMicroservice.Catalog.API.csproj|solutionrelative:udemynewmicroservice.catalog.api\\notes.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|c:\\users\\eren.ilgun\\desktop\\eren \u0130lg\u00FCn\\projects\\udemynewmicroservice\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,22 +14,8 @@
       "DocumentGroups": [
         {
           "DockedHeight": 237,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 11,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Notes.txt",
-              "DocumentMoniker": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\UdemyNewMicroservice.Catalog.API\\Notes.txt",
-              "RelativeDocumentMoniker": "UdemyNewMicroservice.Catalog.API\\Notes.txt",
-              "ToolTip": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\UdemyNewMicroservice.Catalog.API\\Notes.txt",
-              "RelativeToolTip": "UdemyNewMicroservice.Catalog.API\\Notes.txt",
-              "ViewState": "AgIAABABAAAAAAAAAAAAAC0BAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-04-27T10:49:22.646Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -85,27 +63,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\UdemyNewMicroservice.Catalog.API\\Program.cs",
-              "RelativeDocumentMoniker": "UdemyNewMicroservice.Catalog.API\\Program.cs",
-              "ToolTip": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\UdemyNewMicroservice.Catalog.API\\Program.cs",
-              "RelativeToolTip": "UdemyNewMicroservice.Catalog.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T13:00:31.95Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateCategoryCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\UdemyNewMicroservice.Catalog.API\\Features\\Categories\\Create\\CreateCategoryCommandHandler.cs",
-              "RelativeDocumentMoniker": "UdemyNewMicroservice.Catalog.API\\Features\\Categories\\Create\\CreateCategoryCommandHandler.cs",
-              "ToolTip": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\UdemyNewMicroservice.Catalog.API\\Features\\Categories\\Create\\CreateCategoryCommandHandler.cs",
-              "RelativeToolTip": "UdemyNewMicroservice.Catalog.API\\Features\\Categories\\Create\\CreateCategoryCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T12:59:56.145Z",
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\UdemyNewMicroservice\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-04-28T12:53:53.645Z",
               "EditorCaption": ""
             }
           ]

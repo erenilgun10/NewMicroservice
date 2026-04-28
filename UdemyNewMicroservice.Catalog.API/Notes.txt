@@ -296,62 +296,171 @@
     19.24. EF Core Provider limitlerine takılan noktaları listele.
     19.25. Gerekirse MongoDB.Driver ile hibrit yapı kur.
 
-    /*DEVAM*/
 
-    20 -- builder.Services.AddSingleton<IMongoClient, MongoClient>(sp =>
-{
-    var options = sp.GetRequiredService<MongoOption>();
-    return new MongoClient(options.ConnectionString);
-});
+    20. MICROSOFT PATTERNLERİ VE SERVİS KAYIT YAPILARI
 
-20.1 Bunlar gibi microsoft pattern’lerinin araştırılması bu tarz patternlerin listesinin çıkarılması ve projeye uygun olanların uygulanması da önemli bir adım olacaktır.
-20.2 REFİT KÜTÜPHANESİ nedir detaylarına bak. ApiException, HttpClientFactory, Polly gibi kavramlarla ilişkisi nedir araştır. Projede REST API çağrıları varsa Refit ile nasıl entegre edileceğini incele.
-20.3 Polly kütüphanesini araştır. Retry, Circuit Breaker, Timeout gibi politikaların nasıl uygulanacağını ve Refit ile entegrasyonunu incele.
-20.4 -> Virtual ve New keyword’lerinin kullanım farklarını araştır. Özellikle testlerde mocklama yaparken hangi durumlarda virtual, hangi durumlarda new keyword’ünün kullanılması gerektiğini öğren.
--> Polimorphism konusu da burada devreye girebilir. Base class ve derived class yapılarında method overriding ve hiding konularını araştırarak virtual ve new keyword’lerinin hangi durumlarda kullanılması gerektiğini öğren.
+    20.1. Aşağıdaki MongoClient singleton registration yapısını detaylı incele:
+          builder.Services.AddSingleton<IMongoClient, MongoClient>(sp =>
+          {
+              var options = sp.GetRequiredService<MongoOption>();
+              return new MongoClient(options.ConnectionString);
+          });
 
-21.1 MEDİATR kütüphanesini araştır. CQRS pattern’ı ile ilişkisi nedir, nasıl kullanılır incele. Projede command ve query işlemleri için MediatR kullanımı uygun olabilir mi değerlendirme yap.
-21.2 CQRS pattern’ını araştır. Command ve Query işlemlerinin ayrılması ne gibi avantajlar sağlar, nasıl uygulanır incele. Projede karmaşık iş kuralları veya yüksek performans gereksinimi varsa CQRS kullanımı uygun olabilir mi değerlendirme yap.
-21.3 Domain Events kavramını araştır. DDD (Domain-Driven Design) ile ilişkisi nedir, nasıl uygulanır incele.
-21.4 Capling pattern’ını araştır. Özellikle distributed transaction yönetimi için kullanılan Capling pattern’ının ne olduğunu, nasıl çalıştığını ve projede kullanılıp kullanılamayacağını incele. 
--> Controller ile bussiness arasındaki capling pattern’ını araştırarak controller’da sadece API endpoint tanımlanıp iş kurallarının service katmanında nasıl yönetileceğini öğren.
-21.5 Immutable object kavramını araştır. Immutable object’ların avantajları nelerdir, nasıl oluşturulur incele. Projede immutable object kullanımı uygun olabilir mi değerlendirme yap.
-21.6 RouteGroupBuilder nedir ? 
+    20.2. Bu tarz Microsoft pattern’lerinin neler olduğunu araştır.
+    20.3. Microsoft pattern’lerinin listesini çıkar.
+    20.4. Çıkarılan pattern listesinden projeye uygun olanları belirle.
+    20.5. Projeye uygun olan Microsoft pattern’lerini uygulama planına ekle.
+    20.6. MongoClient registration yapısının projedeki kullanım şeklini netleştir.
+    20.7. MongoOption üzerinden ConnectionString alınan bu yapının nasıl çalıştığını öğren.
+    20.8. Bu registration yapısının MongoDB bağlantı yönetimindeki önemini incele.
 
 
+    21. REFIT KÜTÜPHANESİ
+
+    21.1. Refit kütüphanesinin ne olduğunu araştır.
+    21.2. Refit’in REST API çağrılarında nasıl kullanıldığını öğren.
+    21.3. Refit ile interface üzerinden API çağrısı yapma mantığını incele.
+    21.4. Refit ile HttpClientFactory ilişkisini araştır.
+    21.5. Refit ile Polly ilişkisini araştır.
+    21.6. Refit kullanırken ApiException kavramını incele.
+    21.7. ApiException ile hata yönetiminin nasıl yapılacağını öğren.
+    21.8. Refit ile GET / POST / PUT / DELETE çağrılarının nasıl yazıldığını incele.
+    21.9. Projede REST API çağrıları varsa Refit kullanılabilir mi değerlendir.
+    21.10. Refit kullanılacaksa projeye nasıl entegre edileceğini planla.
 
 
+    22. POLLY KÜTÜPHANESİ
 
-XX. KONTROL LİSTESİ
+    22.1. Polly kütüphanesinin ne olduğunu araştır.
+    22.2. Retry politikasının ne olduğunu öğren.
+    22.3. Retry politikasının hangi durumlarda kullanılacağını incele.
+    22.4. Circuit Breaker politikasının ne olduğunu araştır.
+    22.5. Circuit Breaker politikasının dış servis hatalarında nasıl çalıştığını öğren.
+    22.6. Timeout politikasının ne olduğunu araştır.
+    22.7. Timeout politikasının REST API çağrılarında nasıl uygulanacağını incele.
+    22.8. Polly ile Refit entegrasyonunun nasıl yapılacağını araştır.
+    22.9. Polly ile HttpClientFactory ilişkisinin nasıl kurulduğunu incele.
+    22.10. Projede dış API çağrıları varsa Polly kullanımı gerekli mi değerlendir.
 
-    [ ] Snowflake algorithm araştırıldı.
-    [ ] ObjectId vs Snowflake karşılaştırıldı.
-    [ ] EF Core Owned Types incelendi.
-    [ ] MongoDB.Driver incelendi.
-    [ ] MongoDB.Bson incelendi.
-    [ ] MongoDB.Bson.Serialization.Attributes incelendi.
-    [ ] MongoDB.EntityFrameworkCore incelendi.
-    [ ] MongoOption sınıfı oluşturuldu.
-    [ ] appsettings.json MongoDB ayarları eklendi.
-    [ ] Options Pattern yapılandırıldı.
-    [ ] IMongoClient singleton olarak eklendi.
-    [ ] AppDbContext oluşturuldu.
-    [ ] UseMongoDB yapılandırıldı.
-    [ ] DbSet property’leri eklendi.
-    [ ] ToCollection mappingleri eklendi.
-    [ ] Owned Type mappingleri eklendi.
-    [ ] Entity modelleri document yapısına göre düzenlendi.
-    [ ] Embedded document alanları belirlendi.
-    [ ] Ayrı collection olacak entity’ler belirlendi.
-    [ ] Indexlenecek alanlar belirlendi.
-    [ ] Unique index alanları belirlendi.
-    [ ] CRUD testleri yapıldı.
-    [ ] Pagination test edildi.
-    [ ] Projection test edildi.
-    [ ] Nested field sorguları test edildi.
-    [ ] Provider limitleri çıkarıldı.
-    [ ] MongoDB.Driver gereken senaryolar belirlendi.
-    [ ] Replication konusu incelendi.
-    [ ] Backup stratejisi belirlendi.
-    [ ] Monitoring stratejisi belirlendi.
-    [ ] Security ayarları kontrol edildi.
+
+    23. VIRTUAL, NEW VE POLYMORPHISM
+
+    23.1. C# virtual keyword’ünün ne işe yaradığını araştır.
+    23.2. C# new keyword’ünün ne işe yaradığını araştır.
+    23.3. virtual ve new keyword’lerinin kullanım farklarını öğren.
+    23.4. Base class ve derived class yapılarında virtual kullanımını incele.
+    23.5. Base class ve derived class yapılarında new kullanımını incele.
+    23.6. Method overriding konusunu araştır.
+    23.7. Method hiding konusunu araştır.
+    23.8. Polymorphism konusunu araştır.
+    23.9. Polymorphism ile virtual keyword arasındaki ilişkiyi öğren.
+    23.10. new keyword kullanımının polymorphism davranışına etkisini incele.
+    23.11. Testlerde mocklama yaparken virtual kullanımının neden önemli olduğunu araştır.
+    23.12. Hangi durumlarda virtual, hangi durumlarda new kullanılacağını örneklerle öğren.
+
+
+    24. MEDIATR KÜTÜPHANESİ
+
+    24.1. MediatR kütüphanesinin ne olduğunu araştır.
+    24.2. MediatR’ın nasıl kullanıldığını incele.
+    24.3. MediatR’ın CQRS pattern’ı ile ilişkisini araştır.
+    24.4. MediatR ile command işlemlerinin nasıl yönetildiğini öğren.
+    24.5. MediatR ile query işlemlerinin nasıl yönetildiğini öğren.
+    24.6. Projede command ve query işlemleri için MediatR kullanımı uygun mu değerlendir.
+    24.7. MediatR kullanılırsa controller ile business arasındaki akışın nasıl olacağını incele.
+
+
+    25. CQRS PATTERN
+
+    25.1. CQRS pattern’ının ne olduğunu araştır.
+    25.2. Command ve Query işlemlerinin ayrılması ne anlama geliyor öğren.
+    25.3. Command işlemlerinin hangi operasyonları kapsadığını incele.
+    25.4. Query işlemlerinin hangi operasyonları kapsadığını incele.
+    25.5. Command ve Query ayrımının sağladığı avantajları araştır.
+    25.6. CQRS pattern’ının nasıl uygulanacağını incele.
+    25.7. Projede karmaşık iş kuralları varsa CQRS kullanımı uygun mu değerlendir.
+    25.8. Projede yüksek performans gereksinimi varsa CQRS kullanımı uygun mu değerlendir.
+    25.9. CQRS ile MediatR birlikte kullanılacaksa yapının nasıl kurulacağını araştır.
+
+
+    26. DOMAIN EVENTS
+
+    26.1. Domain Events kavramını araştır.
+    26.2. Domain Events’in DDD ile ilişkisini öğren.
+    26.3. Domain Event’in hangi durumlarda oluşturulacağını incele.
+    26.4. Domain Event’lerin nasıl uygulanacağını araştır.
+    26.5. Domain Event handler yapısını incele.
+    26.6. Projede Domain Events kullanımı uygun olabilir mi değerlendir.
+
+
+    27. CAPLING PATTERN
+
+    27.1. Capling pattern’ının ne olduğunu araştır.
+    27.2. Distributed transaction yönetimi ile ilişkisini incele.
+    27.3. Capling pattern’ının nasıl çalıştığını öğren.
+    27.4. Projede Capling pattern kullanılıp kullanılamayacağını değerlendir.
+    27.5. Controller ile business arasındaki capling konusunu araştır.
+    27.6. Controller’da sadece API endpoint tanımlanması gerektiği yaklaşımını incele.
+    27.7. İş kurallarının service katmanında nasıl yönetileceğini öğren.
+    27.8. Controller ve service katmanı arasındaki sorumluluk ayrımını değerlendir.
+
+
+    28. IMMUTABLE OBJECT
+
+    28.1. Immutable object kavramını araştır.
+    28.2. Immutable object’ların avantajlarını öğren.
+    28.3. Immutable object’ların nasıl oluşturulduğunu incele.
+    28.4. C# tarafında immutable object yazımını araştır.
+    28.5. Projede immutable object kullanımı uygun olabilir mi değerlendir.
+    28.6. Hangi nesnelerin immutable tasarlanabileceğini belirle.
+
+
+    29. ROUTEGROUPBUILDER
+
+    29.1. RouteGroupBuilder nedir araştır.
+    29.2. RouteGroupBuilder’ın ASP.NET Core tarafındaki kullanım amacını öğren.
+    29.3. RouteGroupBuilder ile endpoint gruplama mantığını incele.
+    29.4. RouteGroupBuilder’ın Minimal API ile ilişkisini araştır.
+    29.5. MapGroup kullanımını incele.
+    29.6. Projede RouteGroupBuilder kullanımı uygun olabilir mi değerlendir.
+
+
+    XX. KONTROL LİSTESİ DEVAM
+
+    [ ] MongoClient singleton registration yapısı incelendi.
+    [ ] Microsoft pattern’leri araştırıldı.
+    [ ] Microsoft pattern’leri listesi çıkarıldı.
+    [ ] Projeye uygun Microsoft pattern’leri belirlendi.
+    [ ] Refit kütüphanesi araştırıldı.
+    [ ] Refit ile ApiException ilişkisi incelendi.
+    [ ] Refit ile HttpClientFactory ilişkisi incelendi.
+    [ ] Refit ile Polly ilişkisi incelendi.
+    [ ] REST API çağrıları için Refit kullanımı değerlendirildi.
+    [ ] Polly kütüphanesi araştırıldı.
+    [ ] Retry politikası incelendi.
+    [ ] Circuit Breaker politikası incelendi.
+    [ ] Timeout politikası incelendi.
+    [ ] Polly ve Refit entegrasyonu araştırıldı.
+    [ ] virtual keyword araştırıldı.
+    [ ] new keyword araştırıldı.
+    [ ] virtual ve new kullanım farkları öğrenildi.
+    [ ] Polymorphism konusu araştırıldı.
+    [ ] Method overriding konusu incelendi.
+    [ ] Method hiding konusu incelendi.
+    [ ] Testlerde mocklama için virtual kullanımı öğrenildi.
+    [ ] MediatR kütüphanesi araştırıldı.
+    [ ] MediatR ile CQRS ilişkisi incelendi.
+    [ ] Command ve Query işlemleri için MediatR kullanımı değerlendirildi.
+    [ ] CQRS pattern araştırıldı.
+    [ ] Command ve Query ayrımı öğrenildi.
+    [ ] CQRS’in projeye uygunluğu değerlendirildi.
+    [ ] Domain Events kavramı araştırıldı.
+    [ ] Domain Events ve DDD ilişkisi incelendi.
+    [ ] Capling pattern araştırıldı.
+    [ ] Distributed transaction yönetimi ile ilişkisi incelendi.
+    [ ] Controller ile business arasındaki capling konusu araştırıldı.
+    [ ] İş kurallarının service katmanında yönetilmesi incelendi.
+    [ ] Immutable object kavramı araştırıldı.
+    [ ] Projede immutable object kullanımı değerlendirildi.
+    [ ] RouteGroupBuilder araştırıldı.
+    [ ] RouteGroupBuilder ile endpoint gruplama incelendi.

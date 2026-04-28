@@ -14,7 +14,7 @@ services:
   mongo.db.catalog.ui:
     restart: always
     image: mongo-express:1.0.2-20-alpine3.19
-    container_name: mongo.db.catalog.ui
+    container_name: mongo.db.catalog.ui.container
     ports:
       - "27032:8081"
     environment:
