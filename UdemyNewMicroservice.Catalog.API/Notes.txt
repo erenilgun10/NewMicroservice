@@ -424,6 +424,19 @@
     29.5. MapGroup kullanımını incele.
     29.6. Projede RouteGroupBuilder kullanımı uygun olabilir mi değerlendir.
 
+    30 Validation ve FluentValidation
+    30.1. Validation kavramını araştır.
+    30.2. FluentValidation kütüphanesini araştır.
+    30.3. FluentValidation ile validation işlemlerinin nasıl yapıldığını incele.
+    30.4. Projede FluentValidation kullanımı uygun olabilir mi değerlendir.
+    30.5. Fluent Validation minimal API ile entegrasyonunu araştır.
+    30.6. FluentValidation ile custom validation yazımını incele.
+    30.7. FluentValidation ile nested object validation işlemlerini incele.
+    30.8. FluentValidation ile validation error handling işlemlerini incele.
+    30.9. FluentValidation ile localization işlemlerini incele.
+    30.10. FluentValidation ile validation pipeline kurulumu incele.
+    
+
 
     XX. KONTROL LİSTESİ DEVAM
 
