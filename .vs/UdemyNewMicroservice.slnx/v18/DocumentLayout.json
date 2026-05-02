@@ -14,22 +14,8 @@
       "DocumentGroups": [
         {
           "DockedHeight": 237,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 11,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Notes.txt",
-              "DocumentMoniker": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\MicroService\\UdemyNewMicroservice\\UdemyNewMicroservice.Catalog.API\\Notes.txt",
-              "RelativeDocumentMoniker": "UdemyNewMicroservice.Catalog.API\\Notes.txt",
-              "ToolTip": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\MicroService\\UdemyNewMicroservice\\UdemyNewMicroservice.Catalog.API\\Notes.txt",
-              "RelativeToolTip": "UdemyNewMicroservice.Catalog.API\\Notes.txt",
-              "ViewState": "AgIAAGoBAAAAAAAAAAAAALUBAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-04-29T08:18:49.856Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -73,6 +59,20 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Notes.txt",
+              "DocumentMoniker": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\MicroService\\UdemyNewMicroservice\\UdemyNewMicroservice.Catalog.API\\Notes.txt",
+              "RelativeDocumentMoniker": "UdemyNewMicroservice.Catalog.API\\Notes.txt",
+              "ToolTip": "C:\\Users\\eren.ilgun\\Desktop\\Eren \u0130lg\u00FCn\\Projects\\MicroService\\UdemyNewMicroservice\\UdemyNewMicroservice.Catalog.API\\Notes.txt",
+              "RelativeToolTip": "UdemyNewMicroservice.Catalog.API\\Notes.txt",
+              "ViewState": "AgIAACUBAAAAAAAAAAAAAHUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-04-29T08:18:49.856Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             }
           ]
         },
