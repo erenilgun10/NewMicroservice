@@ -1,6 +1,12 @@
-@UdemyNewMicroservice.Catalog.API_HostAddress = http://localhost:5155/scalar/
+@baseAddress = http://localhost:5155
 
-GET {{UdemyNewMicroservice.Catalog.API_HostAddress}}
+GET {{baseAddress}}/api/categories
 Accept: application/json
+
+###
+
+POST {{baseAddress}}/api/categories
+Accept: application/json
+ContentType{}
 
 ###

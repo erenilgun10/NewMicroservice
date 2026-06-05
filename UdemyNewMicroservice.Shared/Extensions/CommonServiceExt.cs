@@ -12,6 +12,8 @@ public static class CommonServiceExt
         services.AddValidatorsFromAssemblyContaining(assembly);
 
 
+        services.AddAutoMapper(cfg => { },assembly);
+
         return services;
     }
 

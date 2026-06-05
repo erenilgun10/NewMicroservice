@@ -436,44 +436,22 @@
     30.9. FluentValidation ile localization işlemlerini incele.
     30.10. FluentValidation ile validation pipeline kurulumu incele.
     
+    31. AUTOMAPPER
+    31.1. AutoMapper nedir ve hangi problemi çözer?
+    31.2. DTO ile Entity arasında mapping neden yapılır?
+    31.3. Profile sınıfı ne işe yarar?
+    31.4. Mapping class neden Profile sınıfından miras almalıdır?
+    31.5. CreateMap<TSource, TDestination>() ne işe yarar?
+    31.6. ReverseMap() ne işe yarar ve ne zaman kullanılmalıdır?
+    31.7. AutoMapper Program.cs içinde nasıl register edilir?
+    31.8. IMapper dependency injection ile nasıl kullanılır?
+    31.9. Property isimleri farklıysa mapping nasıl tanımlanır?
+    31.10. Mapping sırasında bazı property’ler nasıl dışarıda bırakılır?
+    31.11. Id, CreatedAt, UpdatedAt gibi sistem alanları mapping sırasında nasıl yönetilmelidir?
+    31.12. Update işleminde mevcut entity üzerine mapping nasıl yapılır?
+    31.13. Nested object ve collection mapping nasıl çalışır?
+    31.14. AutoMapper configuration hataları nasıl test edilir?
+    31.15. AutoMapper hangi durumlarda kullanılmamalıdır?
 
 
-    XX. KONTROL LİSTESİ DEVAM
 
-    [ ] MongoClient singleton registration yapısı incelendi.
-    [ ] Microsoft pattern’leri araştırıldı.
-    [ ] Microsoft pattern’leri listesi çıkarıldı.
-    [ ] Projeye uygun Microsoft pattern’leri belirlendi.
-    [ ] Refit kütüphanesi araştırıldı.
-    [ ] Refit ile ApiException ilişkisi incelendi.
-    [ ] Refit ile HttpClientFactory ilişkisi incelendi.
-    [ ] Refit ile Polly ilişkisi incelendi.
-    [ ] REST API çağrıları için Refit kullanımı değerlendirildi.
-    [ ] Polly kütüphanesi araştırıldı.
-    [ ] Retry politikası incelendi.
-    [ ] Circuit Breaker politikası incelendi.
-    [ ] Timeout politikası incelendi.
-    [ ] Polly ve Refit entegrasyonu araştırıldı.
-    [ ] virtual keyword araştırıldı.
-    [ ] new keyword araştırıldı.
-    [ ] virtual ve new kullanım farkları öğrenildi.
-    [ ] Polymorphism konusu araştırıldı.
-    [ ] Method overriding konusu incelendi.
-    [ ] Method hiding konusu incelendi.
-    [ ] Testlerde mocklama için virtual kullanımı öğrenildi.
-    [ ] MediatR kütüphanesi araştırıldı.
-    [ ] MediatR ile CQRS ilişkisi incelendi.
-    [ ] Command ve Query işlemleri için MediatR kullanımı değerlendirildi.
-    [ ] CQRS pattern araştırıldı.
-    [ ] Command ve Query ayrımı öğrenildi.
-    [ ] CQRS’in projeye uygunluğu değerlendirildi.
-    [ ] Domain Events kavramı araştırıldı.
-    [ ] Domain Events ve DDD ilişkisi incelendi.
-    [ ] Capling pattern araştırıldı.
-    [ ] Distributed transaction yönetimi ile ilişkisi incelendi.
-    [ ] Controller ile business arasındaki capling konusu araştırıldı.
-    [ ] İş kurallarının service katmanında yönetilmesi incelendi.
-    [ ] Immutable object kavramı araştırıldı.
-    [ ] Projede immutable object kullanımı değerlendirildi.
-    [ ] RouteGroupBuilder araştırıldı.
-    [ ] RouteGroupBuilder ile endpoint gruplama incelendi.
