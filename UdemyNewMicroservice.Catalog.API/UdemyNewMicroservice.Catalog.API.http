@@ -5,8 +5,12 @@ Accept: application/json
 
 ###
 
+
 POST {{baseAddress}}/api/categories
 Accept: application/json
-ContentType{}
+Content-Type: application/json
+{
+  "name": "category 12"
+}
 
 ###

@@ -5,7 +5,7 @@ using UdemyNewMicroservice.Catalog.API.Repositories;
 using UdemyNewMicroservice.Shared;
 using UdemyNewMicroservice.Shared.Extensions;
 
-namespace UdemyNewMicroservice.Catalog.API.Features.Categories.GetAll;
+namespace UdemyNewMicroservice.Catalog.API.Features.Categories.GetById;
 
 public static class GetByIdCategoryEndpoint
 {
