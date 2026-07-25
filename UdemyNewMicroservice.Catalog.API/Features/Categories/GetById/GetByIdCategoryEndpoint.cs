@@ -10,9 +10,9 @@ namespace UdemyNewMicroservice.Catalog.API.Features.Categories.GetById;
 public static class GetByIdCategoryEndpoint
 {
 
-    public static RouteGroupBuilder GetAllCategoryGroupItemEndpoint(this RouteGroupBuilder group)
+    public static RouteGroupBuilder GetByIdCategoryGroupItemEndpoint(this RouteGroupBuilder group)
     {
-        group.MapGet("/", async (IMediator mediator) => (await mediator.Send(new GetByIdCategoryQuery())).ToGenericResult());
+        group.MapGet("get/{id:guid}", async (IMediator mediator, Guid id) => (await mediator.Send(new UpdateCategoryQuery(id))).ToGenericResult());
 
         return group;
     }

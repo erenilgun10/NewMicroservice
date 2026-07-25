@@ -1,16 +1,15 @@
 ﻿using AutoMapper;
 using MediatR;
-using Microsoft.AspNetCore.Http.HttpResults;
 using System.Net;
 using UdemyNewMicroservice.Catalog.API.Features.Categories.Dto;
 using UdemyNewMicroservice.Catalog.API.Repositories;
 using UdemyNewMicroservice.Shared;
 
-namespace UdemyNewMicroservice.Catalog.API.Features.Categories.GetById;
+namespace UdemyNewMicroservice.Catalog.API.Features.Categories.Delete;
 
-public class GetByIdCategoryHandler(AppDbContext context, IMapper mapper) : IRequestHandler<UpdateCategoryQuery, ServiceResult<CategoryDto>>
+public class DeleteCategoryHandler(AppDbContext context) : IRequestHandler<DeleteCategoryQuery, ServiceResult>
 {
-    public async Task<ServiceResult<CategoryDto>> Handle(UpdateCategoryQuery request, CancellationToken cancellationToken = default)
+    public async Task<ServiceResult> Handle(DeleteCategoryQuery request, CancellationToken cancellationToken = default)
     {
 
         Category? hasCategory = await context.Categories.FindAsync(request.Id, cancellationToken);
@@ -18,10 +17,13 @@ public class GetByIdCategoryHandler(AppDbContext context, IMapper mapper) : IReq
         {
             return ServiceResult<CategoryDto>.Error("Category not found", $"The Category with ID {request.Id} was not found.", HttpStatusCode.NotFound);
         }
-        var categoryDto = mapper.Map<CategoryDto>(hasCategory);
+
+        context.Categories.Remove(hasCategory);
+        await context.SaveChangesAsync(cancellationToken);
 
 
-        return ServiceResult<CategoryDto>.SuccessAsOk(categoryDto);
+
+        return ServiceResult.SuccessAsNoContent();
     }
 
 

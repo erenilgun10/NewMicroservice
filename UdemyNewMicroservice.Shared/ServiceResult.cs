@@ -155,6 +155,16 @@ public class ServiceResult<T> : ServiceResult
         };
     }
 
+    public static ServiceResult<T> SuccessAsUpdated(T data, string url)
+    {
+        return new ServiceResult<T>
+        {
+            Status = HttpStatusCode.OK,
+            Data = data,
+            UrlAsCreated = url
+        };
+    }
+
     // 204 => NoContent => Response body de herhangi bir veri dönülmez
     public new static ServiceResult<T> ErrorFromProblemDetails(ApiException exception)
     {

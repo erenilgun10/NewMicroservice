@@ -14,3 +14,9 @@ Content-Type: application/json
 }
 
 ###
+
+
+GET {{baseAddress}}/api/categories
+Accept: application/json
+
+###

@@ -1,5 +1,8 @@
 ﻿using UdemyNewMicroservice.Catalog.API.Features.Categories.Create;
+using UdemyNewMicroservice.Catalog.API.Features.Categories.Delete;
 using UdemyNewMicroservice.Catalog.API.Features.Categories.GetAll;
+using UdemyNewMicroservice.Catalog.API.Features.Categories.GetById;
+using UdemyNewMicroservice.Catalog.API.Features.Categories.Update;
 
 namespace UdemyNewMicroservice.Catalog.API.Features.Categories;
 
@@ -9,8 +12,9 @@ public static class CategoryEndpointExt
     {
         app.MapGroup("api/categories")
             .CreateCategoryGroupItemEndpoint()
-            .GetAllCategoryGroupItemEndpoint();
+            .GetAllCategoryGroupItemEndpoint()
+            .GetByIdCategoryGroupItemEndpoint()
+            .DeleteCategoryGroupItemEndpoint()
+            .UpdateCategoryGroupItemEndpoint();
     }
-
-
 }

@@ -7,16 +7,16 @@ using UdemyNewMicroservice.Shared;
 
 namespace UdemyNewMicroservice.Catalog.API.Features.Categories.Create;
 
-public class CreateCategoryCommandHandler(AppDbContext context) : IRequestHandler<CreateCategoryCommand, ServiceResult<CreateCategoryResponse>>
+public class CreateCategoryCommandHandler(AppDbContext context) : IRequestHandler<UpdateCategoryCommand, ServiceResult<UpdateCategoryResponse>>
 {
-    public async Task<ServiceResult<CreateCategoryResponse>> Handle(CreateCategoryCommand request, CancellationToken cancellationToken)
+    public async Task<ServiceResult<UpdateCategoryResponse>> Handle(UpdateCategoryCommand request, CancellationToken cancellationToken)
     {
 
         var existCategory = await context.Categories.AnyAsync(x => x.Name == request.Name, cancellationToken: cancellationToken);
 
         if (existCategory)
         {
-            ServiceResult<CreateCategoryResponse>.Error("Category already exist", $"A category with the name '{request.Name}' already exists.", HttpStatusCode.BadRequest);
+            ServiceResult<UpdateCategoryResponse>.Error("Category already exist", $"A category with the name '{request.Name}' already exists.", HttpStatusCode.BadRequest);
         }
         var category = new Category
         {
@@ -27,7 +27,7 @@ public class CreateCategoryCommandHandler(AppDbContext context) : IRequestHandle
         await context.AddAsync(category, cancellationToken);
         await context.SaveChangesAsync(cancellationToken);
 
-        return ServiceResult<CreateCategoryResponse>.SuccessAsCreated(new CreateCategoryResponse(category.Id),"<empty>");
+        return ServiceResult<UpdateCategoryResponse>.SuccessAsCreated(new UpdateCategoryResponse(category.Id),"<empty>");
 
     }
 }

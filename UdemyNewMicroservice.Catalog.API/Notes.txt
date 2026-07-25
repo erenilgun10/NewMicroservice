@@ -113,8 +113,7 @@
     7.9. IOptions<MongoOption> kullanımını incele.
     7.10. MongoOption değerini singleton olarak DI’a ekleme şeklini incele.
     7.11. Aşağıdaki yapıyı projede uygulanabilir hâle getir:
-          services.AddSingleton<MongoOption>(sp =>
-              sp.GetRequiredService<IOptions<MongoOption>>().Value);
+          services.AddSingleton<MongoOption>(sp =>sp.GetRequiredService<IOptions<MongoOption>>().Value);
     7.12. Development / Production ortamlarında farklı connection string kullanımını incele.
     7.13. Connection string bilgisinin secret olarak nasıl saklanacağını araştır.
 

@@ -4,4 +4,4 @@ using UdemyNewMicroservice.Shared;
 
 namespace UdemyNewMicroservice.Catalog.API.Features.Categories.GetById;
 
-public record GetByIdCategoryQuery(Guid Id) : IRequest<ServiceResult<CategoryDto>>;
+public record UpdateCategoryQuery(Guid Id) : IRequest<ServiceResult<CategoryDto>>;
